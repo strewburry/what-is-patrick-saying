@@ -1,0 +1,60 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A quiz to test your knowledge of Patrick Stump’s enunciation and Pete Wentz’s lyricism."> 
+    <title>What is Patrick really saying?</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body id="background">
+    <header role="banner">
+      <h1>What is Patrick really saying?</h1>
+    </header>
+    <main role="main"> 
+    <div class="quiz-main">
+      <div id="start-button">
+        <p>Do you really know the words?</p>
+        <button id="start">Test your knowledge!</button>
+        </div> 
+      <section id="quiz-block" class="hidden">
+        <h3 class="question-text"></h3>
+        <form id="question-form"> 
+        <label class="answer">
+          <input type="radio" name="answerChoice" required><span>(Answer choice 1)</span>
+        </label>
+        <label class="answer">
+          <input type="radio" name="answerChoice" required><span>(Answer choice 2)</span>
+        </label>
+        <label class="answer">
+          <input type="radio" name="answerChoice" required><span>(Answer choice 3)</span>
+        </label>
+        <label class="answer">
+          <input type="radio" name="answerChoice" required><span>(Answer choice 4)</span>
+        </label>
+        <button class="submit" type="submit">Check your answer!</button>
+        </form>
+      </section>
+      
+      <div role="dialog" data-role="popup" class="feedback-popup" aria-describedby="popup-text"></div>
+      <div class="popup-text"> 
+      <h2></h2>
+      <h4></h4>
+      <img src="" alt=""> 
+      </div>
+      
+      <div class="final-score">
+      </div>
+      
+     <button id="restart" class="hidden">Take it again!</button>
+
+      
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="index.js"></script>
+  </body>
+</html>
